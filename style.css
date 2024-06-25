@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #dcdcdc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.over{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "faceOne faceOne faceTwo faceFive"
+        "faceThree faceFour faceFour faceFive";
+    grid-template-columns: repeat(1fr, 4);
+    grid-template-rows: 17rem 17rem;
+    max-width: 86vw;
+    max-height: 100vh;
+    margin: auto;
+    margin-top: 3rem;
+}
+.over p{
+    font-size:0.8rem;
+    padding: 0.8rem 1.6rem 1.8rem 1.6rem;
+ }
+.over h3{
+    font-size:0.9rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+ }
+ .one{
+    position: relative;
+ }
+ .quo{
+    position: absolute;
+    top: 0.1rem;
+    right: 3.5rem;
+    height: 2rem;
+ }
+ .first{
+    position: absolute;
+   
+ }
+ .over > div:first-child{
+    grid-area: faceOne;
+    background: rgb(127, 32, 190);
+ }
+ .first, .second, .forth > h3{
+    color: white;
+ }
+ .first > p{
+    color: #b6b4b4;
+ }
+ .dan{
+    display: flex;
+    gap: 1.1rem;
+    margin: 1.5rem 0 0 1.5rem;
+    color: rgb(238, 238, 238);
+    font-size: 0.8rem;
+    line-height: 1.190rem;
+ }
+ .dan .spn{
+    color: rgb(194, 193, 193);
+    font-size: 0.7rem;
+ }
+ .dan img{
+    border: 2px solid  rgb(141, 24, 141);
+    border-radius: 50%;
+    height: 8%;
+    width: 8%;
+ }
+ .over > div:nth-child(2){
+    grid-area: faceTwo;
+    background: rgba(0, 0, 0, 0.733);
+ }
+ .two p{
+    line-height: 1.2rem;
+}
+.two img{
+    height: 11%;
+    width: 11%;
+}
+ .over > div:nth-child(3){
+    grid-area: faceThree;
+    background: white;
+ }
+ .three img{
+    height: 12%;
+    width: 12%;
+}
+ .over > div:nth-child(4){
+    grid-area: faceFour;
+    background: rgba(0, 0, 15, 0.897);
+ }
+ .forth > p{
+    color: #b6b4b4;
+ }
+ .four.dan img{
+    border: 2px solid rgb(141, 24, 141);
+    border-radius: 50%;
+    height: 7%;
+    width: 7%;
+ }
+ .four p{
+    line-height: 1rem;
+}
+ .over > div:nth-child(5){
+    grid-area: faceFive;
+    background: white;
+ }
+ .over > div{
+    border-radius: 0.6rem;
+ }
+.three > .dan{
+    color: rgba(0, 0, 15, 0.932);
+    font-weight: bold;
+}
+.five > .dan{
+    color: rgba(0, 0, 15, 0.932);
+    font-weight: bold;
+}
+.spn1{
+    color: #838181;
+}
+.three, .five h3{
+    color: rgba(0, 0, 15, 0.897);
+}
+.three, .five{
+   box-shadow: 1rem 0.5rem 1rem rgb(199, 199, 199);
+}
+.three p{
+    line-height: 1.4rem;
+}
+.fifth > p{
+    color: gray;
+    line-height: 1.3rem;
+}
+.five img{
+    height: 11%;
+    width: 11%;
+}
+.two, .three, .five, .dan img{
+    border:none;
+}
+@media (max-width:1098px){
+    .over p{
+        font-size:0.6rem;
+     }
+    .over h3{
+        font-size:0.7rem;
+     }
+     .fifth > p{
+        color: gray;
+        line-height: 1.3rem;
+    }
+}
+@media (max-width:1178px){
+    .fifth > p{
+       color: gray;
+       line-height: 1.1rem;
+   }
+}
+@media (max-width:1128px){
+    .fifth > p{
+       color: gray;
+       line-height: 1rem;
+   }
+}
+@media (max-width:1024px){
+    .over p{
+        font-size:0.6rem;
+     }
+    .over h3{
+        font-size:0.7rem;
+     }
+     .fifth > p{
+        color: gray;
+        line-height: 1.2rem;
+    }
+}
+@media (max-width: 800px){
+    body{
+        font-size: 50%;
+    }
+    .over{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "faceOne faceOne "
+            "faceTwo faceThree"
+            "faceFour faceFour"
+            "faceFive faceFive ";
+        grid-template-columns: repeat(1fr, 4);
+        grid-template-rows: 17rem 17rem;
+        max-width: 86vw;
+        max-height: 100vh;
+        margin: auto;
+        margin-top: 3rem;
+    }
+    .over > div:first-child{
+        grid-area: faceOne;
+        background: rgb(127, 32, 190);
+     }
+     .over > div:nth-child(2){
+        grid-area: faceTwo;
+        background: rgba(0, 0, 0, 0.733);
+     }
+     .over > div:nth-child(3){
+        grid-area: faceThree;
+        background: white;
+     }
+     .over > div:nth-child(4){
+        grid-area: faceFour;
+        background: rgba(0, 0, 15, 0.897);
+     }
+     .over > div:nth-child(5){
+        grid-area: faceFive;
+        background: white;
+     } 
+} 
+
+@media (max-width: 600px){
+    body{
+        font-size: 50%;
+    }
+    .over{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "faceOne"
+            "faceTwo"
+            "faceThree"
+            "faceFour" 
+            "faceFive";
+        max-width: 86vw;
+        max-height: 100vh;
+        margin: auto;
+        margin-top: 3rem;
+    }
+    .over > div:first-child{
+        grid-area: faceOne;
+        background: rgb(127, 32, 190);
+     }
+     .over > div:nth-child(2){
+        grid-area: faceTwo;
+        background: rgba(0, 0, 0, 0.733);
+     }
+     .over > div:nth-child(3){
+        grid-area: faceThree;
+        background: white;
+     }
+     .over > div:nth-child(4){
+        grid-area: faceFour;
+        background: rgba(0, 0, 15, 0.897);
+     }
+     .over > div:nth-child(5){
+        grid-area: faceFive;
+        background: white;
+     }
+}
+@media (max-width:500px){
+    body{
+        font-size: 50%;
+    }
+    .over{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "faceOne"
+            "faceTwo"
+            "faceThree"
+            "faceFour" 
+            "faceFive";
+        max-width: 86vw;
+        max-height: 100vh;
+        margin: auto;
+        margin-top: 3rem;
+    }
+    .over p{
+        font-size:0.6rem;
+     }
+    .over h3{
+        font-size:0.7rem;
+     }
+    .over > div:first-child{
+        grid-area: faceOne;
+        background: rgb(127, 32, 190);
+     }
+     .over > div:nth-child(2){
+        grid-area: faceTwo;
+        background: rgba(0, 0, 0, 0.733);
+     }
+     .over > div:nth-child(3){
+        grid-area: faceThree;
+        background: white;
+     }
+     .over > div:nth-child(4){
+        grid-area: faceFour;
+        background: rgba(0, 0, 15, 0.897);
+     }
+     .over > div:nth-child(5){
+        grid-area: faceFive;
+        background: white;
+     }
+     .quo{
+        position: absolute;
+        top: 0.1rem;
+        right: 3.5rem;
+     }
+}
