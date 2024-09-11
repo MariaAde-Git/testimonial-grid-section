@@ -21,6 +21,10 @@ body{
     margin: auto;
     margin-top: 3rem;
 }
+.over > div:first-child{
+   grid-area: faceOne;
+   background: rgb(127, 32, 190);
+}
 .over p{
     font-size:0.8rem;
     padding: 0.8rem 1.6rem 1.8rem 1.6rem;
@@ -41,10 +45,6 @@ body{
  .first{
     position: absolute;
    
- }
- .over > div:first-child{
-    grid-area: faceOne;
-    background: rgb(127, 32, 190);
  }
  .first, .second, .forth > h3{
     color: white;
